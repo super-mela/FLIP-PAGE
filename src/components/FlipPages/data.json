@@ -1,0 +1,28 @@
+{
+    "flipData": [
+        {
+            "id": 1,
+            "imageUrl": "some_blend.jpg"
+        },
+        {
+            "id": 2,
+            "imageUrl": "some_random_text.jpg"
+        },
+        {
+            "id": 3,
+            "imageUrl": "some_random_text.jpg"
+        },
+        {
+            "id": 4,
+            "imageUrl": "some_random_text.jpg"
+        },
+        {
+            "id": 5,
+            "imageUrl": "some_random_text.jpg"
+        },
+        {
+            "id": 6,
+            "imageUrl": "some_random_text.jpg"
+        }
+    ]
+}

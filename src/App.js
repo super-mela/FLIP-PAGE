@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+// import React, { useState } from 'react';
+// import { Document, Page, pdfjs } from "react-pdf";
+// import PB from './resource/PB.pdf'
+// pdfjs.GlobalWorkerOptions.workerSrc = "/pdf.worker.js"
 
-function App() {
+// function App() {
+//   const [numPages, setNumPages] = useState(null);
+//   const [pageNumber, setPageNumber] = useState(1);
+
+
+//   function onDocumentLoadSuccess({ numPages }) {
+//     setNumPages(numPages);
+//   }
+
+//   return (
+//     <div>
+//       <Document file={PB} onLoadSuccess={onDocumentLoadSuccess}
+
+//       >
+//         <Page pageNumber={pageNumber} />
+//       </Document>
+//       <p>
+//         Page {pageNumber} of {numPages}
+//       </p>
+//     </div>
+//   );
+// }
+
+// export default App;
+import FlipPages from "./components/FlipPages/FlipPages";
+// import MapToPlay from "./components/MapToPlay/MapToPlay";
+// import TabToPlay from "./components/TabToPlay/TabToPlay";
+import "./styles.css";
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-header">
+        {/* <TabToPlay /> */}
+        <FlipPages />
+        {/* <MapToPlay /> */}
+      </div>
     </div>
   );
 }
 
-export default App;
